@@ -1,14 +1,15 @@
-/****  CSS TO MAKE THINGS LOOK PRETTY  ****/
+/*************************
+GENERAL - GLOBAL
+**************************/
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-   box-sizing: border-box;
+html {
+  box-sizing: border-box;
+  height: 100%;
 }
 
-/*************************
-GENERAL
-**************************/
+*, *:before, *:after {
+   box-sizing: inherit;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -17,41 +18,38 @@ body {
 }
 
 #wrapper {
-max-width: 940px;
+max-width: 90%;
 margin: 0 auto;
 padding: 0 5%;
+}
+
+.page {
+  width: 80%;
 }
 
 a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 /*************************
-HEADING
+HEADING - GLOBAL
 **************************/
 
 header {
-  border: 1px solid rgba(255,255,255,0.8);
   margin-bottom: 5px;
-  border-radius: 3px;
-  position: relative;
+  border-radius: 5px;
   text-align: center;
 }
 
-logo {
+.logo {
   margin 0;
 }
 
 h1 {
 text-align: center;
 font-family: 'Roboto', sans-serif;
-margin: 15px 0;
+margin: 0 auto;
 font-size: 1.75em;
-font-weight: normal;
 line-height: 0.8cm;
 font-weight: 700;
 }
@@ -64,12 +62,11 @@ h2 {
 }
 
 /*************************
-NAVIGATION
+NAVIGATION - GLOBAL
 **************************/
 
 nav {
   text-align: center;
-  padding: 10px 0;
   margin: 20px 0 0;
 }
 
@@ -81,29 +78,29 @@ nav ul {
 
 nav li {
   display: inline-block;
+
 }
 
 nav a {
-  font-weight: 300;
+  font-weight: 500;
   padding: 15px 10px;
-  color: #009688;
 }
 
+
 /*************************
-FOOTER
+FOOTER - GLOBAL
 **************************/
 
 footer {
-  font-size: 0.75em;
+  font-size: .80em;
   text-align: center;
   clear: both;
-  padding-top: 50px;
-  color: #009688; /*Main - Teal*/
+  padding-top:50px;
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.6em;
+  height: 1.6em;
   margin: 0 5px;
 }
 
@@ -111,84 +108,141 @@ footer {
 PAGE: HOME
 **************************/
 
-#wrapper {
-  margin-bottom: 10px;
-  border-radius: 3px;
-  text-align: center;
-} 
-
-section {
-  margin: 0;
-  padding: 0;
+.jungle {
+  max-width: 100%;
+  float: left;
+  width: 50%;
+  border-radius: 20px 5px 20px;
+  margin-top: 2em;
 }
 
-aside {
-  border: 1px solid rgba(255,255,255,0.8);
-  margin-bottom: 10px;
-  border-radius: 3px;
+/**  ASIDE  **/
+
+.sidebar {
+  float: right;
+  width: 20%;
 }
 
 .sidebar_img {
-  margin 0;
+  max-width: 100%;
+  width: 20em;
+  border-radius: 20px 5px 20px;
 }
 
-aside p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
+aside {}
+
+aside h2 {
+  font-weight: 500;
+  margin-bottom: .75em;
+}
+
+aside img {}
+
+aside p {}
+
+/*************************
+PAGE: MASSAGE
+**************************/
+#description {
+  vertical-align: text-top;
+  padding-bottom: 4px;
+}
+
+#service {
+  padding-top: 10px;
+}
+
+#cost {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+
+/*************************
+PAGE: Contact Us
+**************************/
+
+ul.social {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul.social li a {
+    float: left;
 }
 
 /*************************
-PAGE: 
+PAGE: BLOG
 **************************/
 
-/*************************
-PAGE: 
-**************************/
+.page {
+  margin-left: 50px;
+}
 
-/*************************
-PAGE: 
-**************************/
+.content {
+  float: right;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: none;
+}
+
+.placeholder {
+  float: right;
+  margin: 20px;
+}
 
 /*************************
 COLORS 
 **************************/
 /* site body  */
 body {
-  color:#fff;
+
 }
 
-/* white header  */
-header {
-  background: #009688;
-  border-color: black;
+/* header  */
+header h1 {
+  color: #black;
+}
+
+header h2 {
+  color: #03B4B3;
+}
+
+header h3 {
+  color: black;
+  font-size: 16pt;
 }
 
 /* nav background on mobile */
 nav {
-  background: #009688;
-}
-
-/* logo text  */
-h1, h2 {
-  color: #fff;
+  color: #03B4B3;
 }
 
 /* links  */
 a {
-  color: #009688;
-}
-
-/* nav link  */
-nav a, nav a:visited {
-  color: #fff;
+  color: #03B4B3;
 }
 
 /* selected nav link  */
 nav a.selected, nav a:hover {
-  color: #32673f;
+  color: #fff;
 }
 
+section {
+  color: #03B4B3;
+}
+
+aside {
+  color: #03B4B3;
+}
+
+aside p {
+  color: black;
+}
+
+footer {
+  color: #03B4B3;
+}
 
 
 
